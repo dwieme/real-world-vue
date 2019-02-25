@@ -40,9 +40,14 @@
         <datepicker v-model="event.date" placeholder="Select a date" />
       </div>
 
-      <BaseSelect v-model="event.time" label="Select a time" :options="times" />
+      <BaseSelect
+        class="field"
+        v-model="event.time"
+        label="Select a time"
+        :options="times"
+      />
 
-      <input type="submit" class="button -fill-gradient" value="Submit" />
+      <BaseButton type="submit" class="-fill-gradient">Submit</BaseButton>
     </form>
   </div>
 </template>
